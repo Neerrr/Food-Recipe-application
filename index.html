@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Food Recipes</h1>
+        <form id="recipe-form">
+            <input type="text" id="name" placeholder="Recipe Name" required />
+            <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+            <textarea id="instructions" placeholder="Instructions" required></textarea>
+            <button type="submit">Add Recipe</button>
+        </form>
+        <h2>Recipes</h2>
+        <ul id="recipe-list">
+            <!-- Recipe items will appear here -->
+        </ul>
+        <h2>Collections</h2>
+        <form id="collection-form">
+            <input type="text" id="collection-name" placeholder="Collection Name" required />
+            <button type="submit">Create Collection</button>
+        </form>
+        <ul id="collection-list">
+            <!-- Collection items will appear here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
